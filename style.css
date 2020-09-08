@@ -168,7 +168,7 @@ body, html {
 }
 
 .project-img-1 {
-  background-image: url(./Images/weather.jpg);
+  background-image: url(./Images/react-weather.png);
 }
 .project-img-2 {
   background-image: url(./Images/anon.jpg);
@@ -198,7 +198,7 @@ body, html {
   grid-template-areas: 
   ". title ."
   ". . ."
-  "desc . list";
+  "desc link list";
   font-size: 2vmin;
   height: 100%;
   width: 100%;
@@ -224,6 +224,8 @@ body, html {
   padding: 0 25px;
   list-style: none;
   place-self: end;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
 }
 
 
@@ -294,6 +296,18 @@ body, html {
   display: block;
   padding-top: 5px;
   /* line-height: 1.8vmax; */
+}
+
+.website {
+  grid-area: link;
+  justify-self: center;
+  align-self: end;
+  padding: 2vh;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  margin: 20px;
+  font-family: var(--main-font);
+  color: var(--dark);
 }
 
 .spliter {
